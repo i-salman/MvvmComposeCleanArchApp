@@ -18,7 +18,6 @@ class GetArticleDetailUseCase @Inject constructor(
     operator fun invoke(articleId: String): Flow<Response<ArticleDetail>> = flow {
         try {
             emit(Response.Loading<ArticleDetail>())
-            Log.d("salli", "GetArticleDetailUseCase")
             val article = repository.getArticleDetail(articleId)
             emit(Response.Success<ArticleDetail>(article))
         } catch (e: HttpException) {

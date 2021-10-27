@@ -27,7 +27,6 @@ class ArticleDetailViewModel @Inject constructor(
 
     init {
         savedStateHandle.get<String>("articleId")?.let {
-            Log.d("salli", "detail view model - ${it}")
             getArticleDetail(it)
         }
     }
