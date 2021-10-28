@@ -2,6 +2,7 @@ package com.nxb.mvvm.data.remote
 
 import com.nxb.mvvm.domain.model.Article
 import com.nxb.mvvm.domain.model.ArticleDetail
+import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.Path
 

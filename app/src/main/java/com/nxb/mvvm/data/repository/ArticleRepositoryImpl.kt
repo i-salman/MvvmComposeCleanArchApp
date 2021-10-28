@@ -4,6 +4,7 @@ import com.nxb.mvvm.data.remote.RemoteApi
 import com.nxb.mvvm.domain.model.Article
 import com.nxb.mvvm.domain.model.ArticleDetail
 import com.nxb.mvvm.domain.repository.ArticleRepository
+import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
 class ArticleRepositoryImpl @Inject constructor(

@@ -1,6 +1,9 @@
 package com.nxb.mvvm.di
 
+import android.app.Application
+import androidx.room.Room
 import com.nxb.mvvm.common.Constants
+import com.nxb.mvvm.data.local.AppDatabase
 import com.nxb.mvvm.data.remote.RemoteApi
 import com.nxb.mvvm.data.repository.ArticleRepositoryImpl
 import com.nxb.mvvm.domain.repository.ArticleRepository
@@ -33,4 +36,10 @@ class AppModule {
         return ArticleRepositoryImpl(api)
     }
 
+    @Provides
+    @Singleton
+    fun provideAppDatabase(app: Application): AppDatabase {
+        return Room.databaseBuilder(app, AppDatabase::class.java, AppDatabase.DATABASE_NAME)
+            .build();
+    }
 }

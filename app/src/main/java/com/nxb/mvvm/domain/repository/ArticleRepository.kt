@@ -2,6 +2,7 @@ package com.nxb.mvvm.domain.repository
 
 import com.nxb.mvvm.domain.model.Article
 import com.nxb.mvvm.domain.model.ArticleDetail
+import kotlinx.coroutines.flow.Flow
 
 interface ArticleRepository {
 
