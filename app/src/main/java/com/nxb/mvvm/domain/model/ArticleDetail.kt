@@ -1,5 +1,8 @@
 package com.nxb.mvvm.domain.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
 data class ArticleDetail(
     val id: Int,
     val imageUrl: String,

@@ -2,9 +2,12 @@ package com.nxb.mvvm.di
 
 import android.app.Application
 import androidx.room.Room
+import com.nxb.mvvm.common.ArticleDataFactory
 import com.nxb.mvvm.common.Constants
 import com.nxb.mvvm.data.local.AppDatabase
 import com.nxb.mvvm.data.remote.RemoteApi
+import com.nxb.mvvm.data.repository.ArticleDataRepository
+import com.nxb.mvvm.data.repository.ArticleLocalRepositoryImpl
 import com.nxb.mvvm.data.repository.ArticleRepositoryImpl
 import com.nxb.mvvm.domain.repository.ArticleRepository
 import dagger.Module
@@ -13,6 +16,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import javax.inject.Named
 import javax.inject.Singleton
 
 
@@ -32,8 +36,9 @@ class AppModule {
 
     @Provides
     @Singleton
-    fun provideArticleRepository(api: RemoteApi): ArticleRepository {
-        return ArticleRepositoryImpl(api)
+    @Named("remote")
+    fun provideArticleRepository(api: RemoteApi, db: AppDatabase): ArticleRepository {
+        return ArticleRepositoryImpl(api, db.articleDao)
     }
 
     @Provides
@@ -42,4 +47,27 @@ class AppModule {
         return Room.databaseBuilder(app, AppDatabase::class.java, AppDatabase.DATABASE_NAME)
             .build();
     }
+
+    @Provides
+    @Singleton
+    @Named("local")
+    fun provideArticleLocalRepository(db: AppDatabase): ArticleRepository {
+        return ArticleLocalRepositoryImpl(db.articleDao)
+    }
+
+    @Provides
+    @Singleton
+    fun provideArticleDataFactory(app: Application,
+                                  @Named("local") local : ArticleRepository,
+                                  @Named("remote") remote: ArticleRepository
+    ): ArticleDataFactory {
+        return ArticleDataFactory(app, local, remote)
+    }
+
+    @Provides
+    @Singleton
+    fun provideArticleDataRepository(factory: ArticleDataFactory): ArticleDataRepository {
+        return ArticleDataRepository(factory)
+    }
+
 }

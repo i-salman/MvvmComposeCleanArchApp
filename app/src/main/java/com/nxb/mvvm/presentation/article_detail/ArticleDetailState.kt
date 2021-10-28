@@ -5,6 +5,6 @@ import com.nxb.mvvm.domain.model.ArticleDetail
 
 data class ArticleDetailState(
     val isLoading: Boolean = false,
-    val article: ArticleDetail? = null,
+    val article: Article? = null,
     val error: String = ""
 )

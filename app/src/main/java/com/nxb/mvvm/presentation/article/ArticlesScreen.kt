@@ -1,6 +1,8 @@
 package com.nxb.mvvm.presentation.article
 
+import android.app.Application
 import android.util.Log
+import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.MaterialTheme
@@ -19,12 +21,14 @@ import androidx.compose.ui.Alignment.Companion.Center
 import com.nxb.mvvm.presentation.article.components.ArticleItem
 import com.nxb.mvvm.presentation.common.components.Error
 import com.nxb.mvvm.ui.screens.Screen
+import dagger.hilt.android.qualifiers.ApplicationContext
 
 @Composable
 fun ArticlesScreen(
     navController: NavController,
     viewModel: ArticlesViewModel = hiltViewModel()
 ) {
+
     val state = viewModel.state.value
     Column (
         modifier = Modifier

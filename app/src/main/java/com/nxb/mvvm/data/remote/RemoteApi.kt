@@ -12,6 +12,6 @@ interface RemoteApi {
     suspend fun getArticles(): List<Article>
 
     @GET("/v3/articles/{articleId}")
-    suspend fun getArticleDetail(@Path("articleId") articleId: String): ArticleDetail
+    suspend fun getArticleDetail(@Path("articleId") articleId: String): Article
 
 }
