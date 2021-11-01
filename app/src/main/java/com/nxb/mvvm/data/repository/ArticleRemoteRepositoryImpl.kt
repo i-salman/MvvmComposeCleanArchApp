@@ -9,7 +9,7 @@ import com.nxb.mvvm.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 
-class ArticleRepositoryImpl @Inject constructor(
+class ArticleRemoteRepositoryImpl @Inject constructor(
     private val api: RemoteApi,
     private val articleDao: ArticleDao
 ): ArticleRepository {

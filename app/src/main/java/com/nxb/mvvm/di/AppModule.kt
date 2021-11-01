@@ -8,7 +8,7 @@ import com.nxb.mvvm.data.local.AppDatabase
 import com.nxb.mvvm.data.remote.RemoteApi
 import com.nxb.mvvm.data.repository.ArticleDataRepository
 import com.nxb.mvvm.data.repository.ArticleLocalRepositoryImpl
-import com.nxb.mvvm.data.repository.ArticleRepositoryImpl
+import com.nxb.mvvm.data.repository.ArticleRemoteRepositoryImpl
 import com.nxb.mvvm.domain.repository.ArticleRepository
 import dagger.Module
 import dagger.Provides
@@ -38,7 +38,7 @@ class AppModule {
     @Singleton
     @Named("remote")
     fun provideArticleRepository(api: RemoteApi, db: AppDatabase): ArticleRepository {
-        return ArticleRepositoryImpl(api, db.articleDao)
+        return ArticleRemoteRepositoryImpl(api, db.articleDao)
     }
 
     @Provides
