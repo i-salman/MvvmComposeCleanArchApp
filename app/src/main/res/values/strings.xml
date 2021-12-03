@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MVVMComposeCleanArchApp</string>
+    <string name="atricle_screen_title">Space Flight Articles</string>
 </resources>

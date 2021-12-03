@@ -1,8 +1,5 @@
 package com.nxb.mvvm.presentation.article
 
-import android.app.Application
-import android.util.Log
-import android.widget.Toast
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.MaterialTheme
@@ -18,10 +15,11 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.Center
+import androidx.compose.ui.res.stringResource
 import com.nxb.mvvm.presentation.article.components.ArticleItem
 import com.nxb.mvvm.presentation.common.components.Error
 import com.nxb.mvvm.ui.screens.Screen
-import dagger.hilt.android.qualifiers.ApplicationContext
+import com.nxb.mvvm.R
 
 @Composable
 fun ArticlesScreen(
@@ -36,7 +34,7 @@ fun ArticlesScreen(
             .fillMaxWidth()
     ) {
         Text(
-            text = "Space Flight Articles",
+            text = stringResource(id = R.string.atricle_screen_title),
             color = MaterialTheme.colors.primary,
             style = MaterialTheme.typography.h4,
             textAlign = TextAlign.Center,
