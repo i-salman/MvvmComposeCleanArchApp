@@ -1,4 +1,4 @@
-package com.nxb.mvvm.presentation.common.components
+package com.salman.mvvm.presentation.common.components
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text

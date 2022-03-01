@@ -1,7 +1,7 @@
-package com.nxb.mvvm.data.remote
+package com.salman.mvvm.data.remote
 
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.domain.model.ArticleDetail
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.ArticleDetail
 import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.Path

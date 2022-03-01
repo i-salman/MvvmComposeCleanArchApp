@@ -1,4 +1,4 @@
-package com.nxb.mvvm
+package com.salman.mvvm
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp

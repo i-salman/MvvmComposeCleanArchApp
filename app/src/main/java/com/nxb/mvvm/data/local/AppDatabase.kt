@@ -1,8 +1,8 @@
-package com.nxb.mvvm.data.local
+package com.salman.mvvm.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.nxb.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.Article
 
 
 @Database(

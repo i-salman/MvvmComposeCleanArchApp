@@ -1,4 +1,4 @@
-package com.nxb.mvvm.presentation.article.components
+package com.salman.mvvm.presentation.article.components
 
 import android.util.Log
 import androidx.compose.foundation.Image
@@ -13,9 +13,9 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.presentation.util.loadPicture
-import com.nxb.mvvm.R
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.presentation.util.loadPicture
+import com.salman.mvvm.R
 
 @Composable
 fun ArticleItem(

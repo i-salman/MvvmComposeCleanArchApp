@@ -1,8 +1,8 @@
-package com.nxb.mvvm.data.repository
+package com.salman.mvvm.data.repository
 
-import com.nxb.mvvm.common.ArticleDataFactory
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.domain.repository.ArticleRepository
+import com.salman.mvvm.common.ArticleDataFactory
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.domain.repository.ArticleRepository
 import javax.inject.Inject
 
 class ArticleDataRepository (

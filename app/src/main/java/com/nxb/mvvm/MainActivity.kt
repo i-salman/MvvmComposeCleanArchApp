@@ -1,4 +1,4 @@
-package com.nxb.mvvm
+package com.salman.mvvm
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,10 +8,10 @@ import androidx.compose.material.Surface
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.nxb.mvvm.presentation.article.ArticlesScreen
-import com.nxb.mvvm.presentation.article_detail.ArticleDetailScreen
-import com.nxb.mvvm.ui.AppTheme
-import com.nxb.mvvm.ui.screens.Screen
+import com.salman.mvvm.presentation.article.ArticlesScreen
+import com.salman.mvvm.presentation.article_detail.ArticleDetailScreen
+import com.salman.mvvm.ui.AppTheme
+import com.salman.mvvm.ui.screens.Screen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -1,4 +1,4 @@
-package com.nxb.mvvm
+package com.salman.mvvm
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.nxb.mvvm", appContext.packageName)
+        assertEquals("com.salman.mvvm", appContext.packageName)
     }
 }

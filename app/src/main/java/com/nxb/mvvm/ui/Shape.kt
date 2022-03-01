@@ -1,4 +1,4 @@
-package com.nxb.mvvm.ui
+package com.salman.mvvm.ui
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

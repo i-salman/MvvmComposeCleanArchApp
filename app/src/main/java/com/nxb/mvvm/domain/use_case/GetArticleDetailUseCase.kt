@@ -1,11 +1,11 @@
-package com.nxb.mvvm.domain.use_case
+package com.salman.mvvm.domain.use_case
 
 import android.util.Log
-import com.nxb.mvvm.common.Response
-import com.nxb.mvvm.data.repository.ArticleDataRepository
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.domain.model.ArticleDetail
-import com.nxb.mvvm.domain.repository.ArticleRepository
+import com.salman.mvvm.common.Response
+import com.salman.mvvm.data.repository.ArticleDataRepository
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.ArticleDetail
+import com.salman.mvvm.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException

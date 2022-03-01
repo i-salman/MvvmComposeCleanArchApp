@@ -1,11 +1,11 @@
-package com.nxb.mvvm.data.repository
+package com.salman.mvvm.data.repository
 
 import android.util.Log
-import com.nxb.mvvm.data.local.ArticleDao
-import com.nxb.mvvm.data.remote.RemoteApi
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.domain.model.ArticleDetail
-import com.nxb.mvvm.domain.repository.ArticleRepository
+import com.salman.mvvm.data.local.ArticleDao
+import com.salman.mvvm.data.remote.RemoteApi
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.ArticleDetail
+import com.salman.mvvm.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

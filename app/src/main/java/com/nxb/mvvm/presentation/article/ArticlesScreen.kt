@@ -1,4 +1,4 @@
-package com.nxb.mvvm.presentation.article
+package com.salman.mvvm.presentation.article
 
 import android.app.Application
 import android.util.Log
@@ -18,9 +18,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.Center
-import com.nxb.mvvm.presentation.article.components.ArticleItem
-import com.nxb.mvvm.presentation.common.components.Error
-import com.nxb.mvvm.ui.screens.Screen
+import com.salman.mvvm.presentation.article.components.ArticleItem
+import com.salman.mvvm.presentation.common.components.Error
+import com.salman.mvvm.ui.screens.Screen
 import dagger.hilt.android.qualifiers.ApplicationContext
 
 @Composable

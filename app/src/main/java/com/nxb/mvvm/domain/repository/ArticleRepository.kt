@@ -1,7 +1,7 @@
-package com.nxb.mvvm.domain.repository
+package com.salman.mvvm.domain.repository
 
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.domain.model.ArticleDetail
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.ArticleDetail
 
 interface ArticleRepository {
 

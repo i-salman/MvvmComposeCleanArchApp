@@ -1,9 +1,9 @@
-package com.nxb.mvvm.data.repository
+package com.salman.mvvm.data.repository
 
-import com.nxb.mvvm.data.local.ArticleDao
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.domain.model.ArticleDetail
-import com.nxb.mvvm.domain.repository.ArticleRepository
+import com.salman.mvvm.data.local.ArticleDao
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.ArticleDetail
+import com.salman.mvvm.domain.repository.ArticleRepository
 import javax.inject.Inject
 
 class ArticleLocalRepositoryImpl @Inject constructor(

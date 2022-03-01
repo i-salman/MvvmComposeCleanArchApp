@@ -1,4 +1,4 @@
-package com.nxb.mvvm.presentation.article_detail
+package com.salman.mvvm.presentation.article_detail
 
 import android.util.Log
 import androidx.compose.runtime.State
@@ -6,10 +6,10 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.nxb.mvvm.common.Response
-import com.nxb.mvvm.domain.repository.ArticleRepository
-import com.nxb.mvvm.domain.use_case.GetArticleDetailUseCase
-import com.nxb.mvvm.presentation.article.ArticleState
+import com.salman.mvvm.common.Response
+import com.salman.mvvm.domain.repository.ArticleRepository
+import com.salman.mvvm.domain.use_case.GetArticleDetailUseCase
+import com.salman.mvvm.presentation.article.ArticleState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach

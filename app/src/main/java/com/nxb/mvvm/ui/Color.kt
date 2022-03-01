@@ -1,4 +1,4 @@
-package com.nxb.mvvm.ui
+package com.salman.mvvm.ui
 
 import androidx.compose.ui.graphics.Color
 

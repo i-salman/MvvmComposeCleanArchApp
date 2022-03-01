@@ -1,8 +1,8 @@
-package com.nxb.mvvm.common
+package com.salman.mvvm.common
 
 import android.content.Context
-import com.nxb.mvvm.domain.repository.ArticleRepository
-import com.nxb.mvvm.domain.util.Utils
+import com.salman.mvvm.domain.repository.ArticleRepository
+import com.salman.mvvm.domain.util.Utils
 
 class ArticleDataFactory (
     val app: Context,

@@ -1,15 +1,15 @@
-package com.nxb.mvvm.di
+package com.salman.mvvm.di
 
 import android.app.Application
 import androidx.room.Room
-import com.nxb.mvvm.common.ArticleDataFactory
-import com.nxb.mvvm.common.Constants
-import com.nxb.mvvm.data.local.AppDatabase
-import com.nxb.mvvm.data.remote.RemoteApi
-import com.nxb.mvvm.data.repository.ArticleDataRepository
-import com.nxb.mvvm.data.repository.ArticleLocalRepositoryImpl
-import com.nxb.mvvm.data.repository.ArticleRemoteRepositoryImpl
-import com.nxb.mvvm.domain.repository.ArticleRepository
+import com.salman.mvvm.common.ArticleDataFactory
+import com.salman.mvvm.common.Constants
+import com.salman.mvvm.data.local.AppDatabase
+import com.salman.mvvm.data.remote.RemoteApi
+import com.salman.mvvm.data.repository.ArticleDataRepository
+import com.salman.mvvm.data.repository.ArticleLocalRepositoryImpl
+import com.salman.mvvm.data.repository.ArticleRemoteRepositoryImpl
+import com.salman.mvvm.domain.repository.ArticleRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

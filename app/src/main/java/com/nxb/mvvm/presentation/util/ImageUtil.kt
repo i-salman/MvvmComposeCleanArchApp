@@ -1,4 +1,4 @@
-package com.nxb.mvvm.presentation.util
+package com.salman.mvvm.presentation.util
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable
@@ -12,7 +12,7 @@ import com.bumptech.glide.load.engine.DiskCacheStrategy
 import com.bumptech.glide.request.RequestOptions
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
-import com.nxb.mvvm.R
+import com.salman.mvvm.R
 
 @Composable
 fun loadPicture(

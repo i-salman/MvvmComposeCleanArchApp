@@ -1,6 +1,6 @@
-package com.nxb.mvvm.presentation.article
+package com.salman.mvvm.presentation.article
 
-import com.nxb.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.Article
 
 data class ArticleState (
     val isLoading: Boolean = false,

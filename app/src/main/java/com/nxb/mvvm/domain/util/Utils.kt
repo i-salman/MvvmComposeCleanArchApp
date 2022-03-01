@@ -1,4 +1,4 @@
-package com.nxb.mvvm.domain.util
+package com.salman.mvvm.domain.util
 
 import android.app.Application
 import android.content.Context

@@ -1,4 +1,4 @@
-package com.nxb.mvvm.ui.screens
+package com.salman.mvvm.ui.screens
 
 sealed class Screen(val route: String) {
     object ArticleScreen: Screen("articles")

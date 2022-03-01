@@ -1,11 +1,11 @@
-package com.nxb.mvvm.data.local
+package com.salman.mvvm.data.local
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.nxb.mvvm.domain.model.Article
-import com.nxb.mvvm.domain.model.ArticleDetail
+import com.salman.mvvm.domain.model.Article
+import com.salman.mvvm.domain.model.ArticleDetail
 import kotlinx.coroutines.flow.Flow
 
 @Dao

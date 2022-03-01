@@ -1,4 +1,4 @@
-package com.nxb.mvvm
+package com.salman.mvvm
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.nxb.mvvm.presentation.article_detail
+package com.salman.mvvm.presentation.article_detail
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
@@ -15,10 +15,10 @@ import androidx.compose.ui.text.font.FontStyle
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.nxb.mvvm.R
-import com.nxb.mvvm.presentation.common.components.Error
-import com.nxb.mvvm.presentation.util.loadPicture
-import com.nxb.mvvm.ui.ColorPrimary
+import com.salman.mvvm.R
+import com.salman.mvvm.presentation.common.components.Error
+import com.salman.mvvm.presentation.util.loadPicture
+import com.salman.mvvm.ui.ColorPrimary
 
 @Composable
 fun ArticleDetailScreen(

@@ -1,11 +1,11 @@
-package com.nxb.mvvm.presentation.article
+package com.salman.mvvm.presentation.article
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.nxb.mvvm.common.Response
-import com.nxb.mvvm.domain.use_case.GetArticlesUseCase
+import com.salman.mvvm.common.Response
+import com.salman.mvvm.domain.use_case.GetArticlesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach
