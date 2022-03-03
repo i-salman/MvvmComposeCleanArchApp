@@ -36,6 +36,7 @@ class ArticlesViewModel @Inject constructor (
                 is Response.Error -> {
                     _state.value = ArticleState(error = response.message ?: "An Unexpected error occured")
                 }
+
             }
         }.launchIn(viewModelScope)
     }
