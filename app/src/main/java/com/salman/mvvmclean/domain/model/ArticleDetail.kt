@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.domain.model
+package com.salman.mvvmclean.domain.model
 
 data class ArticleDetail(
     val id: Int,

@@ -1,6 +1,6 @@
-package com.salman.mvvmcleanclean.presentation.article_detail
+package com.salman.mvvmclean.presentation.article_detail
 
-import com.salman.mvvmcleanclean.domain.model.ArticleDetail
+import com.salman.mvvmclean.domain.model.ArticleDetail
 
 data class ArticleDetailState(
     val isLoading: Boolean = false,

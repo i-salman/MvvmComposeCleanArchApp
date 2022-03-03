@@ -1,7 +1,7 @@
-package com.salman.mvvmcleanclean.domain.repository
+package com.salman.mvvmclean.domain.repository
 
-import com.salman.mvvmcleanclean.domain.model.Article
-import com.salman.mvvmcleanclean.domain.model.ArticleDetail
+import com.salman.mvvmclean.domain.model.Article
+import com.salman.mvvmclean.domain.model.ArticleDetail
 
 interface ArticleRepository {
 

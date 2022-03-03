@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.ui.screens
+package com.salman.mvvmclean.ui.screens
 
 sealed class Screen(val route: String) {
     object ArticleScreen: Screen("articles")

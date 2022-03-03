@@ -1,12 +1,12 @@
-package com.salman.mvvmcleanclean.di
+package com.salman.mvvmclean.di
 
 import android.app.Application
 import androidx.room.Room
-import com.salman.mvvmcleanclean.common.Constants
-import com.salman.mvvmcleanclean.data.local.AppDatabase
-import com.salman.mvvmcleanclean.data.remote.RemoteApi
-import com.salman.mvvmcleanclean.data.repository.ArticleRepositoryImpl
-import com.salman.mvvmcleanclean.domain.repository.ArticleRepository
+import com.salman.mvvmclean.common.Constants
+import com.salman.mvvmclean.data.local.AppDatabase
+import com.salman.mvvmclean.data.remote.RemoteApi
+import com.salman.mvvmclean.data.repository.ArticleRepositoryImpl
+import com.salman.mvvmclean.domain.repository.ArticleRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

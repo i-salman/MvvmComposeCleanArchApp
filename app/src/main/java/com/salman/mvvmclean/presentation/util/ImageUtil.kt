@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.presentation.util
+package com.salman.mvvmclean.presentation.util
 
 import android.graphics.Bitmap
 import android.graphics.drawable.Drawable

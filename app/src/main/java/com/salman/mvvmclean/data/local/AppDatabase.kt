@@ -1,8 +1,8 @@
-package com.salman.mvvmcleanclean.data.local
+package com.salman.mvvmclean.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.salman.mvvmcleanclean.domain.model.Article
+import com.salman.mvvmclean.domain.model.Article
 
 
 @Database(

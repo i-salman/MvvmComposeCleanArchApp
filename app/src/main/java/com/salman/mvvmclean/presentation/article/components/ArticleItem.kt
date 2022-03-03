@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.presentation.article.components
+package com.salman.mvvmclean.presentation.article.components
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
@@ -12,9 +12,9 @@ import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.salman.mvvmcleanclean.domain.model.Article
-import com.salman.mvvmcleanclean.presentation.util.loadPicture
-import com.salman.mvvmcleanclean.R
+import com.salman.mvvmclean.domain.model.Article
+import com.salman.mvvmclean.presentation.util.loadPicture
+import com.salman.mvvmclean.R
 
 @Composable
 fun ArticleItem(

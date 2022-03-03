@@ -1,11 +1,11 @@
-package com.salman.mvvmcleanclean.presentation.article
+package com.salman.mvvmclean.presentation.article
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.salman.mvvmcleanclean.common.Response
-import com.salman.mvvmcleanclean.domain.use_case.GetArticlesUseCase
+import com.salman.mvvmclean.common.Response
+import com.salman.mvvmclean.domain.use_case.GetArticlesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.flow.onEach

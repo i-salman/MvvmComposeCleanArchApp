@@ -1,9 +1,9 @@
-package com.salman.mvvmcleanclean.data.repository
+package com.salman.mvvmclean.data.repository
 
-import com.salman.mvvmcleanclean.data.remote.RemoteApi
-import com.salman.mvvmcleanclean.domain.model.Article
-import com.salman.mvvmcleanclean.domain.model.ArticleDetail
-import com.salman.mvvmcleanclean.domain.repository.ArticleRepository
+import com.salman.mvvmclean.data.remote.RemoteApi
+import com.salman.mvvmclean.domain.model.Article
+import com.salman.mvvmclean.domain.model.ArticleDetail
+import com.salman.mvvmclean.domain.repository.ArticleRepository
 import javax.inject.Inject
 
 class ArticleRepositoryImpl @Inject constructor(

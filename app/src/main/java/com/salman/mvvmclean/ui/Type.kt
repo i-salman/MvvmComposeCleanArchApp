@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.ui
+package com.salman.mvvmclean.ui
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.presentation.article
+package com.salman.mvvmclean.presentation.article
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
@@ -15,9 +15,9 @@ import androidx.compose.foundation.lazy.items
 import androidx.compose.material.CircularProgressIndicator
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Alignment.Companion.Center
-import com.salman.mvvmcleanclean.presentation.article.components.ArticleItem
-import com.salman.mvvmcleanclean.presentation.common.components.Error
-import com.salman.mvvmcleanclean.ui.screens.Screen
+import com.salman.mvvmclean.presentation.article.components.ArticleItem
+import com.salman.mvvmclean.presentation.common.components.Error
+import com.salman.mvvmclean.ui.screens.Screen
 
 @Composable
 fun ArticlesScreen(

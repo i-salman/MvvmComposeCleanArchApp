@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.common
+package com.salman.mvvmclean.common
 
 sealed class Response<T>(val data: T? = null, val message: String? = null) {
     class Success<T>(data: T) : Response<T>(data)

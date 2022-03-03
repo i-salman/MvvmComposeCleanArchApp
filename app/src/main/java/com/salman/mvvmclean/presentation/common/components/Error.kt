@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean.presentation.common.components
+package com.salman.mvvmclean.presentation.common.components
 
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text

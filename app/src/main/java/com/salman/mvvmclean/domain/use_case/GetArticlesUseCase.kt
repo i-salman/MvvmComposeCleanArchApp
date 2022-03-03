@@ -1,8 +1,8 @@
-package com.salman.mvvmcleanclean.domain.use_case
+package com.salman.mvvmclean.domain.use_case
 
-import com.salman.mvvmcleanclean.common.Response
-import com.salman.mvvmcleanclean.domain.model.Article
-import com.salman.mvvmcleanclean.domain.repository.ArticleRepository
+import com.salman.mvvmclean.common.Response
+import com.salman.mvvmclean.domain.model.Article
+import com.salman.mvvmclean.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException

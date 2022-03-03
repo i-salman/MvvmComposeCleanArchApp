@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean
+package com.salman.mvvmclean
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,10 +8,10 @@ import androidx.compose.material.Surface
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.salman.mvvmcleanclean.presentation.article.ArticlesScreen
-import com.salman.mvvmcleanclean.presentation.article_detail.ArticleDetailScreen
-import com.salman.mvvmcleanclean.ui.AppTheme
-import com.salman.mvvmcleanclean.ui.screens.Screen
+import com.salman.mvvmclean.presentation.article.ArticlesScreen
+import com.salman.mvvmclean.presentation.article_detail.ArticleDetailScreen
+import com.salman.mvvmclean.ui.AppTheme
+import com.salman.mvvmclean.ui.screens.Screen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

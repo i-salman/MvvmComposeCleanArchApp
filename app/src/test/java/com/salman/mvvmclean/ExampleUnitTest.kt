@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean
+package com.salman.mvvmclean
 
 import org.junit.Test
 

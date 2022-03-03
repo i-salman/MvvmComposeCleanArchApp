@@ -1,4 +1,4 @@
-package com.salman.mvvmcleanclean
+package com.salman.mvvmclean
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
