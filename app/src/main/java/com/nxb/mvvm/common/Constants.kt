@@ -1,7 +1,0 @@
-package com.nxb.mvvm.common
-
-object Constants {
-     val BASE_URL = "https://api.spaceflightnewsapi.net/"
-
-
-}
