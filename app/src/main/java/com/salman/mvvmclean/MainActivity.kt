@@ -9,7 +9,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.salman.mvvmclean.presentation.article.ArticlesScreen
-import com.salman.mvvmclean.presentation.article_detail.ArticleDetailScreen
 import com.salman.mvvmclean.ui.AppTheme
 import com.salman.mvvmclean.ui.screens.Screen
 import dagger.hilt.android.AndroidEntryPoint
@@ -30,12 +29,6 @@ class MainActivity : AppCompatActivity() {
                             route = Screen.ArticleScreen.route
                         ) {
                             ArticlesScreen(navController = navController)
-                        }
-
-                        composable(
-                            route = Screen.ArticleDetailScreen.route +"/{articleId}"
-                        ) {
-                            ArticleDetailScreen()
                         }
                     }
                 }

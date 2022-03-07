@@ -1,7 +1,5 @@
 package com.salman.mvvmclean.di
 
-import android.app.Application
-import androidx.room.Room
 import com.salman.mvvmclean.common.Constants
 import com.salman.mvvmclean.data.remote.RemoteApi
 import com.salman.mvvmclean.data.repository.ArticleRepositoryImpl

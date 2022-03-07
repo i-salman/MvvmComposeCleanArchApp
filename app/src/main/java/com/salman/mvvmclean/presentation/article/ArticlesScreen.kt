@@ -48,7 +48,7 @@ fun ArticlesScreen(
             ) {
                 items(state.articles!!) { article ->
                     ArticleItem(article = article, onClick = { article ->
-                        navController.navigate(Screen.ArticleDetailScreen.route +"/${article.id}")
+
                     })
                 }
             }
