@@ -3,7 +3,6 @@ package com.salman.mvvmclean.di
 import android.app.Application
 import androidx.room.Room
 import com.salman.mvvmclean.common.Constants
-import com.salman.mvvmclean.data.local.AppDatabase
 import com.salman.mvvmclean.data.remote.RemoteApi
 import com.salman.mvvmclean.data.repository.ArticleRepositoryImpl
 import com.salman.mvvmclean.domain.repository.ArticleRepository
@@ -34,12 +33,5 @@ class AppModule {
     @Singleton
     fun provideArticleRepository(api: RemoteApi): ArticleRepository {
         return ArticleRepositoryImpl(api)
-    }
-
-    @Provides
-    @Singleton
-    fun provideAppDatabase(app: Application): AppDatabase {
-        return Room.databaseBuilder(app, AppDatabase::class.java, AppDatabase.DATABASE_NAME)
-            .build();
     }
 }
