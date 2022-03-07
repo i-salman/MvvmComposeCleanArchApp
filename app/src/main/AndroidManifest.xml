@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMComposeCleanArchApp">
         <activity
-            android:name="com.salman.mvvmclean.MainActivity"
+            android:name="com.salman.mvvmclean.presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

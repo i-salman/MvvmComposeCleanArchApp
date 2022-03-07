@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">MVVMComposeCleanArchApp</string>
+    <string name="app_name">MVVM Clean Architecture</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="article_list_item_title">Here goes the news title</string>
+
 </resources>
