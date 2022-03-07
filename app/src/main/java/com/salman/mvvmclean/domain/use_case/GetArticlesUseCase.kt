@@ -1,6 +1,8 @@
 package com.salman.mvvmclean.domain.use_case
 
+import android.util.Log
 import com.salman.mvvmclean.common.Response
+import com.salman.mvvmclean.data.repository.ArticleRepositoryImpl
 import com.salman.mvvmclean.domain.model.Article
 import com.salman.mvvmclean.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.Flow
@@ -13,15 +15,16 @@ class GetArticlesUseCase @Inject constructor(
     private val repository: ArticleRepository
 ) {
 
-    operator fun invoke(): Flow<Response<List<Article>>> = flow {
+    fun getData(): Flow<Response<List<Article>>> = flow {
         try {
-            emit(Response.Loading<List<Article>>())
+            Log.d("flowws", "getData")
+            emit(Response.Loading())
             val articles = repository.getArticles()
             emit(Response.Success(articles))
         } catch (e: HttpException) {
-            emit(Response.Error<List<Article>>(e.localizedMessage))
+            emit(Response.Error(e.localizedMessage))
         } catch (e: IOException) {
-            emit(Response.Error<List<Article>>("Could not reach server, Check internet connection"))
+            emit(Response.Error("Could not reach server, Check internet connection"))
         }
     }
 

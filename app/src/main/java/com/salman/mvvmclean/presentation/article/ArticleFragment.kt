@@ -41,10 +41,13 @@ class ArticleFragment : Fragment() {
             viewModel.state.collect {
 
                 when (it) {
-                    is ArticleState.Loading -> { binding.articlesLoader.visibility = View.VISIBLE }
+                    is ArticleState.Loading -> {
+                        binding.articlesLoader.visibility = View.VISIBLE
+                    }
                     is ArticleState.Success -> {
                         binding.articlesLoader.visibility = View.GONE
-                        binding.articlesListRv.adapter = ArticleAdapter(it.articles, requireActivity())
+                        binding.articlesListRv.adapter =
+                            ArticleAdapter(it.articles, requireActivity())
                     }
                     is ArticleState.Error -> {
                         binding.articlesLoader.visibility = View.GONE
@@ -56,14 +59,5 @@ class ArticleFragment : Fragment() {
                 }
             }
         }
-    }
-
-    private fun getDummyArticles(): List<Article> {
-        val list = ArrayList<Article>()
-
-        list.add(Article(1, "https://external-preview.redd.it/gNoBJ_6rUDRBZ5ziUkzu86HxJTuI8TWYoqWUBMGlnd8.jpg?auto=webp&s=31493c0fa12d164520d218476b159543f345b30e", "", "", "", "one title", "", ""))
-        list.add(Article(2, "https://images.ctfassets.net/lzny33ho1g45/T5qqQQVznbZaNyxmHybDT/b76e0ff25a495e00647fa9fa6193a3c2/best-url-shorteners-00-hero.png", "", "", "", "two title", "", ""))
-
-        return list
     }
 }

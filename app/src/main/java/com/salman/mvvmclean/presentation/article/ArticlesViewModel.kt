@@ -8,10 +8,8 @@ import androidx.lifecycle.viewModelScope
 import com.salman.mvvmclean.common.Response
 import com.salman.mvvmclean.domain.use_case.GetArticlesUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
-import kotlinx.coroutines.flow.launchIn
-import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
@@ -27,23 +25,25 @@ class ArticlesViewModel @Inject constructor (
     }
 
     private fun getArticles() {
-        getArticlesUseCase().onEach { response ->
-            when (response) {
-                is Response.Success -> {
-                    _state.value = ArticleState.Success(response.data ?: emptyList())
-                }
 
-                is Response.Loading -> {
-                    _state.value = ArticleState.Loading
-                }
+        viewModelScope.launch {
+            getArticlesUseCase.getData()
+                .collect { response ->
+                when (response) {
+                    is Response.Success -> {
+                        _state.value = ArticleState.Success(response.data ?: emptyList())
+                    }
 
-                is Response.Error -> {
-                    _state.value = ArticleState.Error(response.message ?: "An Unexpected error occurred")
-                }
+                    is Response.Loading -> {
+                        _state.value = ArticleState.Loading
+                    }
 
+                    is Response.Error -> {
+                        _state.value = ArticleState.Error(response.message ?: "An Unexpected error occurred")
+                    }
+
+                }
             }
-        }.launchIn(viewModelScope)
+        }
     }
-
-
 }
