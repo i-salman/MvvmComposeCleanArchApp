@@ -6,6 +6,7 @@ import com.salman.mvvmclean.data.repository.ArticleRepositoryImpl
 import com.salman.mvvmclean.domain.model.Article
 import com.salman.mvvmclean.domain.repository.ArticleRepository
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.asFlow
 import kotlinx.coroutines.flow.flow
 import retrofit2.HttpException
 import java.io.IOException
@@ -15,9 +16,8 @@ class GetArticlesUseCase @Inject constructor(
     private val repository: ArticleRepository
 ) {
 
-    fun getData(): Flow<Response<List<Article>>> = flow {
+    fun getData() = flow {
         try {
-            Log.d("flowws", "getData")
             emit(Response.Loading())
             val articles = repository.getArticles()
             emit(Response.Success(articles))
@@ -27,5 +27,4 @@ class GetArticlesUseCase @Inject constructor(
             emit(Response.Error("Could not reach server, Check internet connection"))
         }
     }
-
 }
