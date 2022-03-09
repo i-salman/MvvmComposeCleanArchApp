@@ -18,9 +18,8 @@ import kotlinx.coroutines.flow.collect
 @AndroidEntryPoint
 class ArticleFragment : Fragment() {
     private val viewModel by viewModels<ArticlesViewModel>()
-    private lateinit var binding: ArticlesBinding
 
-    private lateinit var state: ArticleState
+    private lateinit var binding: ArticlesBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
