@@ -10,10 +10,3 @@ sealed class ArticleState {
     object Empty: ArticleState()
 
 }
-//data class ArticleState (
-//    val isLoading: Boolean = false,
-//    val articles: List<Article> = emptyList(),
-//    val error: String = ""
-//
-//)
-
